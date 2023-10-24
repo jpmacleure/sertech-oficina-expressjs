@@ -1,0 +1,26 @@
+{
+  "name": "sertech-oficina-expressjs",
+  "version": "1.0.0",
+  "description": "Repositório de códigos para a oficina de Express.js do evento SerTech da UCB",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jpmacleure/sertech-oficina-expressjs.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jpmacleure/sertech-oficina-expressjs/issues"
+  },
+  "homepage": "https://github.com/jpmacleure/sertech-oficina-expressjs#readme",
+  "dependencies": {
+    "express": "^4.18.2",
+    "express-session": "^1.17.2",
+    "mustache-express": "^1.3.2",
+    "sequelize": "^6.31.1",
+    "sqlite3": "^5.1.6"
+  }
+}
