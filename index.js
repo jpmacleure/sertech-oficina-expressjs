@@ -21,14 +21,10 @@ app.use(session({
 }))
 
 // Define as rotas da aplicação (declaradas na pasta /src/routes/)
+app.use('/', require('./src/routes/anotacaoRoutes'));
+app.use('/', require('./src/routes/usuarioRoutes'));
 
-app.get('/', function (req, res) {
-    res.render('index.html');
-})
-
-app.get('/home', function (req, res) {
-    res.render('home.html');
-})
+db.sync(() => console.log(`Banco de dados conectado`));
 
 const app_port = 8080
 app.listen(app_port, function () {

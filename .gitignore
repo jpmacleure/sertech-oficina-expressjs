@@ -1,4 +1,5 @@
 package-lock.json
+database.sqlite
 
 # Logs
 logs

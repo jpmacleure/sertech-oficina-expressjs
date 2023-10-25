@@ -16,7 +16,16 @@
                 <div class="col-4 offset-8 mt-5 bg-light bg-gradient">
 
                     <h1>@note</h1>
-
+                    {{#sucesso}}
+                    <div class="alert alert-success">
+                      Usuário cadastrado com sucesso!
+                    </div>
+                    {{/sucesso}}
+                    {{#erro}}
+                    <div class="alert alert-danger">
+                      Erro ao cadastrar usuário!
+                    </div>
+                    {{/erro}}
                     <form action="/" method="post">
                         <div class="mb-1 mt-1">
                           <label for="email" class="form-label">Email:</label>
@@ -31,7 +40,7 @@
 
                     <h6 class="mt-3">Ainda não tem cadastro? Registre-se gratuitamente.</h6>
 
-                    <form action="/" method="post">
+                    <form action="/cadastrar_usuario" method="post">
                         <div class="mb-1 mt-1">
                           <label for="email" class="form-label">Email:</label>
                           <input type="email" class="form-control" id="email" name="email">
