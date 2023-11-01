@@ -56,7 +56,7 @@
                 </div>
             </nav>
             <main class="col-9 offset-3 ml-sm-auto px-md-4 py-4">
-                <form action="/" method="post">
+                <form action="/cadastrar_anotacao" method="post">
                     <div class="row mt-3 mb-5">
                         <h5>Nova anotação</h5>
                         <div class="col-6">
@@ -83,15 +83,19 @@
                 </form>
 
                 <div class="row my-4">
-                    <div class="col-12 col-md-6 col-lg-3 mb-4 mb-lg-0">
+
+                    {{#anotacaos}}
+                    <div class="col-3 mt-3">
                         <div class="card">
-                            <h5 class="card-header">Título</h5>
+                            <h5 class="card-header">{{titulo}}</h5>
                             <div class="card-body">
-                                <h5 class="card-title">Subtítulo</h5>
-                                <p class="card-text">Texto da anotação</p>
+                                <h5 class="card-title">{{subtitulo}}</h5>
+                                <p class="card-text">{{texto}}</p>
                             </div>
                         </div>
                     </div>
+                    {{/anotacaos}}
+
                 </div>
 
                 <footer class="pt-5 d-flex justify-content-between">
