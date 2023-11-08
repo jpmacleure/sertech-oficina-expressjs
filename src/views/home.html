@@ -59,6 +59,17 @@
                 <form action="/cadastrar_anotacao" method="post">
                     <div class="row mt-3 mb-5">
                         <h5>Nova anotação</h5>
+                        <div class="col-12">
+                            <div class="mt-1">
+                                <select class="w-100" name="estilo" id="estilo">
+                                    <option value="bg-secondary text-white" class="bg-secondary text-white">Padrão</option>
+                                    <option value="bg-primary text-white" class="bg-primary text-white">Primary</option>
+                                    <option value="bg-success text-white" class="bg-success text-white">Success</option>
+                                    <option value="bg-warning" class="bg-warning">Success</option>
+                                    <option value="bg-danger" class="bg-danger">Success</option>
+                                </select>
+                            </div>
+                        </div>
                         <div class="col-6">
                             <div class="mt-1">
                                 <label for="titulo" class="form-label">Título:</label>
@@ -87,7 +98,7 @@
                     {{#anotacaos}}
                     <div class="col-3 mt-3">
                         <div class="card">
-                            <h5 class="card-header">{{titulo}}</h5>
+                            <h5 class="card-header {{estilo}}">{{titulo}}</h5>
                             <div class="card-body">
                                 <h5 class="card-title">{{subtitulo}}</h5>
                                 <p class="card-text">{{texto}}</p>

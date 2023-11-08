@@ -8,6 +8,10 @@ const Anotacao = database.define('anotacao', {
         allowNull: false,
         primaryKey: true
     },
+    id_usuario: {
+        type: Sequelize.INTEGER,
+        allowNull: false
+    },
     titulo: {
         type: Sequelize.STRING,
         allowNull: false
@@ -22,6 +26,10 @@ const Anotacao = database.define('anotacao', {
     },
     indicador_ativo: {
         type: Sequelize.INTEGER,
+        allowNull: false
+    },
+    estilo: {
+        type: Sequelize.STRING,
         allowNull: false
     }
 });
