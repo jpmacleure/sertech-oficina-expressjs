@@ -23,7 +23,6 @@ app.use(session({
 // Define as rotas da aplicação (declaradas na pasta /src/routes/)
 app.use('/', require('./src/routes/anotacaoRoutes'));
 app.use('/', require('./src/routes/usuarioRoutes'));
-app.use('/', require('./src/routes/autenticacaoRoutes'));
 
 db.sync(() => console.log(`Banco de dados conectado`));
 
